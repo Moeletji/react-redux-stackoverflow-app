@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { store } from '../../store/store';
 import UserList from '../UserList';
 
-describe('UserLisr component test', () => {
+describe('UserList component test', () => {
 
     const users = [{
         badge_counts: {
@@ -58,7 +58,7 @@ describe('UserLisr component test', () => {
         display_name: "Gordon Linoff"
     }];
 
-    it('render usercard with initial user', () => {
+    it('render userList with initial user', () => {
         const { getByText } = render(
             <Provider store={store}>
               <UserList users={users} />

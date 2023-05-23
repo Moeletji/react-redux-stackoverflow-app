@@ -1,6 +1,6 @@
 import React from 'react';
 import UserCard from '../UserCard';
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { store } from '../../store/store';
 
@@ -54,4 +54,15 @@ describe('UserCard component test', () => {
           const card = screen.getByText("Jon Skeet");
           expect(card).toBeVisible();
     });
+
+    it('usercard with initial user shows more info on icon click', () => {
+      const { getByText } = render(
+          <Provider store={store}>
+            <UserCard user={user} />
+          </Provider>
+        );
+        fireEvent.click(screen.getByTestId("card-details"));
+
+        expect(getByText(/Reading, United Kingdom/i)).toBeInTheDocument();
+  });
 });

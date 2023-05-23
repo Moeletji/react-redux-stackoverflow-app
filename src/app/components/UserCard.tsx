@@ -39,7 +39,7 @@ const UserCard = (props:{ user: SOUser }) => {
   
     return (
     <div aria-disabled={props.user.isBlocked}>
-        <Card data-test-id={'card-details'} aria-disabled={props.user.isBlocked} style={{ width: '18rem' }} onClick={handleExpand}>
+        <Card data-testid={'card-details'} aria-disabled={props.user.isBlocked} style={{ width: '18rem' }} onClick={handleExpand}>
             <UserImage user={props.user} />
             <Card.Body aria-disabled={props.user.isBlocked}>
             <Card.Title aria-disabled={props.user.isBlocked}>
