@@ -37,3 +37,8 @@
     transform: translateY(0px);
   }
 }
+
+div[aria-disabled] {
+  pointer-events: none;
+  opacity: 0.7;
+}

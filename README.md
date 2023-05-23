@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
 
+## Install the required packages to run the app
+
+In the project directory, you can run
+
+### `npm install`
+
+This will download and install the required packages for the application.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
