@@ -2,6 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
 
+
 ## Install the required packages to run the app
 
 In the project directory, you can run
@@ -22,6 +23,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+Once the page loads you should either get the users listed or an error page because there's a CORS error in
+the browser because the main API link has a redirect.
+
+If you are presented with an error page, just visit:
+[http://api.stackexchange.com/2.2/users?pagesize=20&order=desc&sort=reputation&site=stackoverflow](http://api.stackexchange.com/2.2/users?pagesize=20&order=desc&sort=reputation&site=stackoverflow) and then reload the application tab.
 
 ### `npm test`
 
